@@ -1,3 +1,12 @@
+:root {
+    --red: #d20e0e;
+    --dark-red: #972121;
+    --accent-gold: #FFB81C;
+    --green: #3b904f;
+    --dark-green: #0e6523;
+    --white: #FFFFFF;
+}
+
 /* ========= True Reset ======== */
 
 * {
@@ -33,7 +42,7 @@ NAV
 =================================== */
 
 nav {
-    background: linear-gradient(135deg, #d20e0e 0%, #972121 100%);
+    background: linear-gradient(135deg, var(--red) 0%, var(--dark-red) 100%);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -50,16 +59,20 @@ nav {
 }
 .nav-menu {
     display: flex;
+    min-width: 1rem;
     justify-content: space-between;
     align-items: center;
     margin: 1rem;
+    margin-right: 6rem;
+    
 }
 
 .nav-menu a {
-    background-color: rgb(175, 43, 43);
+    background: linear-gradient(135deg, var(--green) 0%, var(--dark-green) 100%);
+    white-space: nowrap;
+    margin-right: 0.5rem;
     color: #FFFFFF;
     padding: 10px 20px;
-    margin-right: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 0.4rem;
     transition: color 0.3s ease;
@@ -72,8 +85,9 @@ nav {
 }
 
 .logo {
+    text-align: center;
     color: #FFFFFF;
-    padding: 3rem;
+    padding: 1rem;
     font-size: 2rem;
 }
 
@@ -138,8 +152,8 @@ HERO
 }
 
 .btn-primary {
-    background-color: var(--accent-gold);
-    color: var(--primary-blue);
+    background: linear-gradient(135deg, var(--green) 0%, var(--dark-green) 100%);
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
@@ -150,12 +164,135 @@ HERO
 }
 
 .btn-secondary {
-    background-color: var(--secondary-blue);
-    color: var(--white);
+    background-color: gray;
+    color: white;
 }
 
 .btn-secondary:hover {
     background-color: #0052A3;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================== CARDS SECTION ==================== */
+/* TODO: Style the cards section container */
+
+.cards-section {
+    padding: 4rem 0;
+    background-color: var(--light-gray);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 3rem;
+}
+
+/* ==================== CARDS GRID ==================== */
+/* TODO: Create responsive grid using CSS Grid */
+/* Requirements:
+   - 1 column on mobile
+   - 2 columns on tablet (768px+)
+   - 3 columns on desktop (1024px+) */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* ==================== INDIVIDUAL CARD STYLES ==================== */
+/* TODO: Style each card */
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+    
+}
+
+.card-content h3 {
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-content p {
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    
+}
+
+
+
+
+
+
+
+
+
+/* ==================== MEDIA QUERIES ==================== */
+/* TODO: Add responsive breakpoints */
+
+/* ========== TABLET (768px and up) ========== */
+@media screen and (min-width: 768px) {
+    
+    /* TODO: Change cards grid to 2 columns */
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* TODO: Change footer grid to 2 columns */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* TODO: Adjust hero content font sizes if needed */
+    .hero-content h1 {
+        font-size: 5rem;
+    }
+    
+}
+
+/* ========== DESKTOP (1024px and up) ========== */
+@media screen and (min-width: 1024px) {
+    
+    /* TODO: Change cards grid to 3 columns */
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* TODO: Change footer grid to 4 columns */
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* TODO: Increase hero heading size */
+    .hero-content h1 {
+        font-size: 6rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+    
 }
