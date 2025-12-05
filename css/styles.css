@@ -1,9 +1,15 @@
 :root {
-    --red: #d20e0e;
+    --red: #8d1b1b;
     --dark-red: #972121;
     --accent-gold: #FFB81C;
     --green: #3b904f;
     --dark-green: #0e6523;
+    --darker-green: #053610;
+    --blue: #424d64;
+    --dark-blue: #304269;
+    --darker-blue: #0b1a3c;
+    --crimson: #440b0b;
+    --crimson2: #5a0707;
     --white: #FFFFFF;
 }
 
@@ -68,7 +74,7 @@ nav {
 }
 
 .nav-menu a {
-    background: linear-gradient(135deg, var(--green) 0%, var(--dark-green) 100%);
+    background: linear-gradient(135deg, var(--blue) 0%, var(--dark-blue) 100%);
     white-space: nowrap;
     margin-right: 0.5rem;
     color: #FFFFFF;
@@ -164,7 +170,7 @@ HERO
 }
 
 .btn-secondary {
-    background-color: gray;
+    background: linear-gradient(135deg, var(--dark-green) 0%, var(--darker-green) 100%);
     color: white;
 }
 
@@ -178,15 +184,30 @@ HERO
 /* TODO: Style the cards section container */
 
 .cards-section {
-    padding: 4rem 0;
-    background-color: var(--light-gray);
+    padding: 4rem 0 100%;
+    background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson2) 100%);
+}
+
+.card-container {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin: 2rem;
+
 }
 
 .section-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
     text-align: center;
-    font-size: 2.5rem;
-    color: var(--primary-blue);
+    font-size: 3rem;
+    color: var(--accent-gold);
+    text-shadow: 2px 2px 4px rgba(207, 181, 56, alpha);
     margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /* ==================== CARDS GRID ==================== */
@@ -202,11 +223,13 @@ HERO
     gap: 2rem;
 }
 
+
+
 /* ==================== INDIVIDUAL CARD STYLES ==================== */
 /* TODO: Style each card */
 
 .card {
-    background-color: var(--white);
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--darker-blue) 100%);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -230,13 +253,15 @@ HERO
 }
 
 .card-content h3 {
-    color: var(--primary-blue);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--white);
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .card-content p {
-    color: var(--dark-gray);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--white);
     margin-bottom: 1.5rem;
     line-height: 1.6;
     
