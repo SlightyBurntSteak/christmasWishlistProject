@@ -102,13 +102,13 @@ HERO
 =================================== */
 
 .hero {
-    background-image: url(/images/heroChristmas1080.jpg);
+    background-image: url(/images/cardHeadphones1534.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    min-height: 500px;
+    min-height: 700px;
     overflow: hidden;
 }
 
@@ -185,14 +185,33 @@ HERO
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ==================== CARDS SECTION ==================== */
-/* TODO: Style the cards section container */
 
-.cards-section {
-    padding: 4rem 0 100%;
+.content-area {
+    display: block;
+    padding: 4rem 0 50%;
     background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson2) 100%);
 }
 
+.content-area h2 {
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color: var(--accent-gold);
+    text-shadow: 2px 2px 4px rgba(207, 181, 56, alpha);
+    margin-left: 2rem;
+}
+
+.content-area p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 2rem;
+    border-radius: 0.6rem;
+    background: var(--white);
+    max-width: fit-content;
+    padding: 2rem;
+}
+
+
+/*
 .card-container {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -215,12 +234,11 @@ HERO
 
 }
 
-/* ==================== CARDS GRID ==================== */
-/* TODO: Create responsive grid using CSS Grid */
-/* Requirements:
+/* ==================== CARDS GRID ==================== 
+
    - 1 column on mobile
    - 2 columns on tablet (768px+)
-   - 3 columns on desktop (1024px+) */
+   - 3 columns on desktop (1024px+) 
 
 .cards-grid {
     display: grid;
@@ -230,8 +248,8 @@ HERO
 
 
 
-/* ==================== INDIVIDUAL CARD STYLES ==================== */
-/* TODO: Style each card */
+/* ==================== INDIVIDUAL CARD STYLES ==================== 
+/* TODO: Style each card 
 
 .card {
     background: linear-gradient(135deg, var(--dark-blue) 0%, var(--darker-blue) 100%);
@@ -284,7 +302,7 @@ HERO
     justify-content: space-between;
 }
 
-
+*/
 
 
 
