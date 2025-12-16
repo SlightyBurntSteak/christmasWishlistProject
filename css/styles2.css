@@ -11,6 +11,7 @@
     --crimson: #440b0b;
     --crimson2: #5a0707;
     --white: #FFFFFF;
+    --silver: #abb9b9;
 }
 
 /* ========= True Reset ======== */
@@ -102,7 +103,6 @@ HERO
 =================================== */
 
 .hero {
-    background-image: url(/images/cardHeadphones1534.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,6 +110,18 @@ HERO
     width: 100%;
     min-height: 700px;
     overflow: hidden;
+}
+
+.hero-1 {
+    background-image: url(/images/cardHeadphones1534.jpg);
+}
+
+.hero-2 {
+    background-image: url(/images/cardContent2Org.jpg);
+}
+
+.hero-3 {
+    background-image: url(/images/cardContent3Org.jpg);
 }
 
 .hero img {
@@ -134,7 +146,8 @@ HERO
 }
 
 .hero-content h1 {
-    color: #FFFFFF;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--accent-gold);
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: bold;
@@ -146,8 +159,16 @@ HERO
     margin-bottom: 2rem;
     max-width: 600px;
     margin: 0 auto 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 0.6rem;
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--darker-blue) 100%);
+    max-width: fit-content;
+    padding: 2rem;
+    font-weight: bold;
     
 }
+
+
 
 /* ==================== BUTTON STYLES ==================== */
 
@@ -186,126 +207,62 @@ HERO
 }
 
 
-.content-area {
-    display: block;
-    padding: 4rem 0 50%;
-    background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson2) 100%);
-}
-
-.content-area h2 {
-    font-size: 3rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bolder;
-    color: var(--accent-gold);
-    text-shadow: 2px 2px 4px rgba(207, 181, 56, alpha);
-    margin-left: 2rem;
-}
-
-.content-area p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 2rem;
-    border-radius: 0.6rem;
-    background: var(--white);
-    max-width: fit-content;
-    padding: 2rem;
-}
 
 
-/*
-.card-container {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    margin: 2rem;
 
-}
 
-.section-title {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bolder;
-    text-align: center;
-    font-size: 3rem;
-    color: var(--accent-gold);
-    text-shadow: 2px 2px 4px rgba(207, 181, 56, alpha);
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ==================== FOOTER GRID ==================== */
+/* TODO: Create responsive grid for footer sections */
 
-}
-
-/* ==================== CARDS GRID ==================== 
-
-   - 1 column on mobile
-   - 2 columns on tablet (768px+)
-   - 3 columns on desktop (1024px+) 
-
-.cards-grid {
+.footer-grid {
+    background: linear-gradient(135deg, var(--dark-green) 0%, var(--darker-green) 100%);
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    padding: 1rem;
+    
 }
 
+.footer-section h3 {
+    text-align: center;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
 
+/* ==================== FOOTER NAVIGATION ==================== */
+/* TODO: Style footer navigation links */
 
-/* ==================== INDIVIDUAL CARD STYLES ==================== 
-/* TODO: Style each card 
+.footer-nav li {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    
+}
 
-.card {
-    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--darker-blue) 100%);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+.footer-nav a {
+    color: var(--white);
     transition: all 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+.footer-nav a:hover {
+    color: var(--accent-gold);
 }
 
-.card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
+/* ==================== FOOTER COPYRIGHT & DISCLAIMER ==================== */
+/* TODO: These sections can use default styling or customize as desired */
 
-.card-content {
-    padding: 1.5rem;
-    
-}
-
-.card-content h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.footer-copyright p,
+.footer-disclaimer p {
     color: var(--white);
-    font-size: 1.5rem;
-}
-
-.card-top {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--white);
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    justify-content: space-between;
-}
-
-.card-content p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--white);
-    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
     line-height: 1.6;
-    
+    margin-bottom: 0.5rem;
+    margin: auto;
 }
 
-.card-content .card-button {
-    display: flexbox;
-    justify-content: space-between;
+.footer-img {
+    margin: auto;
 }
-
-*/
-
-
-
 
 
 

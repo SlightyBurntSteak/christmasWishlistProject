@@ -11,6 +11,7 @@
     --crimson: #440b0b;
     --crimson2: #5a0707;
     --white: #FFFFFF;
+    --silver: #abb9b9;
 }
 
 /* ========= True Reset ======== */
@@ -134,7 +135,8 @@ HERO
 }
 
 .hero-content h1 {
-    color: #FFFFFF;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--accent-gold);
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: bold;
@@ -189,7 +191,7 @@ HERO
 /* TODO: Style the cards section container */
 
 .cards-section {
-    padding: 4rem 0 100%;
+    padding: 4rem 0;
     background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson2) 100%);
 }
 
@@ -284,8 +286,106 @@ HERO
     justify-content: space-between;
 }
 
+/* ==================== FOOTER GRID ==================== */
+/* TODO: Create responsive grid for footer sections */
+
+.footer-grid {
+    background: linear-gradient(135deg, var(--dark-green) 0%, var(--darker-green) 100%);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    
+}
+
+.footer-section h3 {
+    text-align: center;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* ==================== FOOTER NAVIGATION ==================== */
+/* TODO: Style footer navigation links */
+
+.footer-nav li {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    
+}
+
+.footer-nav a {
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--accent-gold);
+}
+
+/* ==================== FOOTER COPYRIGHT & DISCLAIMER ==================== */
+/* TODO: These sections can use default styling or customize as desired */
+
+.footer-copyright p,
+.footer-disclaimer p {
+    margin: auto;
+    color: var(--white);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.footer-img {
+    margin: auto;
+}
 
 
+
+/* ==================== MEDIA QUERIES ==================== */
+/* TODO: Add responsive breakpoints */
+
+/* ========== TABLET (768px and up) ========== */
+@media screen and (min-width: 768px) {
+    
+    /* TODO: Change cards grid to 2 columns */
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* TODO: Change footer grid to 2 columns */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* TODO: Adjust hero content font sizes if needed */
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+}
+
+/* ========== DESKTOP (1024px and up) ========== */
+@media screen and (min-width: 1024px) {
+    
+    /* TODO: Change cards grid to 3 columns */
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* TODO: Change footer grid to 4 columns */
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* TODO: Increase hero heading size */
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+    
 
 
 
@@ -336,5 +436,5 @@ HERO
     .hero-content p {
         font-size: 1.5rem;
     }
-    
+}
 }
