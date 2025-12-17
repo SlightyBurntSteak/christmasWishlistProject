@@ -137,7 +137,7 @@ HERO
 .hero-content h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--accent-gold);
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: bold;
 }
@@ -359,7 +359,7 @@ HERO
     
     /* TODO: Adjust hero content font sizes if needed */
     .hero-content h1 {
-        font-size: 3.5rem;
+        font-size: 5rem;
     }
     
 }
@@ -379,7 +379,7 @@ HERO
     
     /* TODO: Increase hero heading size */
     .hero-content h1 {
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
     .hero-content p {

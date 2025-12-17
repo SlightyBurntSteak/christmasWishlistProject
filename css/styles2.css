@@ -112,6 +112,8 @@ HERO
     overflow: hidden;
 }
 
+/* Images */
+
 .hero-1 {
     background-image: url(/images/cardHeadphones1534.jpg);
 }
@@ -122,6 +124,30 @@ HERO
 
 .hero-3 {
     background-image: url(/images/cardContent3Org.jpg);
+}
+
+.hero-4 {
+    background-image: url(/images/cardContent4Org.jpg);
+}
+
+.hero-5 {
+    background-image: url(/images/cardContent5Org.jpg);
+}
+
+.hero-6 {
+    background-image: url(/images/cardContent6Org.jpg);
+}
+
+.hero-7 {
+    background-image: url(/images/cardContent7Org.jpg);
+}
+
+.hero-8 {
+    background-image: url(/images/cardContent8Org.jpg);
+}
+
+.hero-9 {
+    background-image: url(/images/cardContent9Org.jpg);
 }
 
 .hero img {
@@ -151,6 +177,16 @@ HERO
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 4);
+}
+
+.hero-content h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--accent-gold);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 4);
 }
 
 .hero-content p {
@@ -161,7 +197,7 @@ HERO
     margin: 0 auto 2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 0.6rem;
-    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--darker-blue) 100%);
+    background: linear-gradient(135deg, var(--dark-red) 0%, var(--crimson2) 100%);
     max-width: fit-content;
     padding: 2rem;
     font-weight: bold;
@@ -207,8 +243,19 @@ HERO
 }
 
 
+strong {
+    color: var(--accent-gold);
+    font-size: 2rem;
 
+}
 
+strong:hover {
+    color: orange;
+}
+
+i {
+    font-size: 0.7rem;
+}
 
 
 /* ==================== FOOTER GRID ==================== */
